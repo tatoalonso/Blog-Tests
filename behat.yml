@@ -1,0 +1,11 @@
+default:
+    autoload:
+        ': %paths.base%/test/MpwebIntegration'
+    suites:
+        example:
+            paths:    [ '%paths.base%/test/MpwebIntegration/Blog/Feature' ]
+
+            contexts: [ MpwebIntegration\Blog\Context\BlogContext ]
+
+            formatters:
+                pretty: true
